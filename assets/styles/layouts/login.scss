@@ -1,0 +1,59 @@
+.xinc-login {
+  border: 1px solid $gray-400;
+  padding: 3rem 4rem;
+  border-radius: $border-radius;
+  margin-top: 3rem;
+
+  h1 {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid $gray-400;
+
+    &[type="text"],
+    &[type="password"] {
+      width: 100%;
+    }
+
+    &.button {
+      @extend .btn-primary;
+    }
+  }
+}
+
+.alert {
+  padding: 1rem;
+  margin: 1rem 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &.top {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &.bottom {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.recaptcha-container {
+  margin-bottom: 1rem;
+}
+
+.alert {
+  border-radius: $border-radius;
+}

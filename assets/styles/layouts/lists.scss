@@ -1,0 +1,95 @@
+.item-list {
+  width: 100%;
+  font-size: 0.875rem;
+
+  tr {
+    border-bottom: 1px solid $gray-200;
+
+    &:last-of-type {
+      border: 0;
+    }
+  }
+
+  td,
+  th {
+    padding: 0.25rem 0.35rem;
+
+    .status {
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    .btn {
+      margin: 0.125rem 0;
+    }
+
+    form {
+      display: inline;
+    }
+
+    .btn-group {
+      white-space: nowrap;
+    }
+  }
+}
+
+form.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  input[type="text"] {
+    margin-right: 0.25rem;
+    padding: 0.35rem;
+  }
+
+  .search-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  label {
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+ul.account-details {
+  label {
+    font-weight: bold;
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+}
+
+nav.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+nav .page-numbers {
+  border-radius: 0;
+  @extend .pagination;
+
+  li a,
+  li span {
+    color: $brand-primary;
+    @extend .page-link;
+
+    &.current {
+      background-color: $brand-primary;
+      color: $white;
+    }
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
